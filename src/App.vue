@@ -1,7 +1,18 @@
+
+
 <script setup lang="ts">
+  // App.vue 用来编写待渲染的 模板结构
+  //index.html 中需要预留一个 el 区域
+  //main.js 把 App.vue 渲染到了 index.html 所预留的区域中
+
+
 import { RouterLink, RouterView } from 'vue-router'
+//局部注册
 import HelloWorld from './components/HelloWorld.vue'
 </script>
+
+
+ 
 
 <template>
   <header>
