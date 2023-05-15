@@ -3,6 +3,10 @@ import HomeView from '../views/HomeView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
+  
+ 
+
+  // console.log(import.meta.env);
   routes: [
     {
       path: '/',
@@ -19,5 +23,8 @@ const router = createRouter({
     }
   ]
 })
+
+
+//console.log(import.meta.env.BASE_URL);
 
 export default router
