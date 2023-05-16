@@ -3,8 +3,13 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "dev": "vite --mode dev", //启动开发服务器
-    "build": "run-p type-check build-only",
+    "dev": "vite --mode dev", 
+    "build": "vue-tsc && vite build",
+    "build:dev": "vue-tsc && vite build --mode dev",
+    "build:uat": "vue-tsc && vite build --mode uat",
+    "build:prod": "vue-tsc && vite build --mode prod",
+
+    "builds": "run-p type-check build-only",
     "preview": "vite preview",
     "build-only": "vite build",
     "type-check": "vue-tsc --noEmit"

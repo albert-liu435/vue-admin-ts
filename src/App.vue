@@ -10,8 +10,6 @@ import { RouterLink, RouterView } from 'vue-router'
 //局部注册
 import HelloWorld from './components/HelloWorld.vue'
 
-
-
 </script>
 
 
@@ -24,7 +22,11 @@ import HelloWorld from './components/HelloWorld.vue'
     <div class="wrapper">
       
       <HelloWorld msg="You did it!" />
+      <p>Using data from %VITE_API_URL%</p>
 
+      <!--使用 router-link 组件进行导航 -->
+      <!--通过传递 `to` 来指定链接 -->
+      <!--`<router-link>` 将呈现一个带有正确 `href` 属性的 `<a>` 标签-->
       <nav>
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/about">About</RouterLink>
