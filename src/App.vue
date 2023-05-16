@@ -22,6 +22,7 @@ import HelloWorld from './components/HelloWorld.vue'
     <div class="wrapper">
       
       <HelloWorld msg="You did it!" />
+      <p>Using data from %VITE_API_URL%</p>
 
       <!--使用 router-link 组件进行导航 -->
       <!--通过传递 `to` 来指定链接 -->
