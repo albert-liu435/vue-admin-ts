@@ -16,17 +16,20 @@ import HelloWorld from './components/HelloWorld.vue'
  
 
 <template>
+  
+  <!-- <header> 元素应该作为介绍内容或者导航链接栏的容器。 -->
   <header>
     <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
 
     <div class="wrapper">
       
       <HelloWorld msg="You did it!" />
-      <p>Using data from %VITE_API_URL%</p>
 
       <!--使用 router-link 组件进行导航 -->
       <!--通过传递 `to` 来指定链接 -->
       <!--`<router-link>` 将呈现一个带有正确 `href` 属性的 `<a>` 标签-->
+
+        <!-- <nav> 标签表示一个页面中的某个部分，目的是提供导航链接，常见的导航栏的示例是菜单、目录和索引 -->
       <nav>
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/about">About</RouterLink>
@@ -34,10 +37,13 @@ import HelloWorld from './components/HelloWorld.vue'
     </div>
   </header>
 
+  <!-- 路由出口 -->
+  <!-- 路由匹配到的组件将渲染在这里 -->
   <RouterView />
 </template>
 
 <style scoped>
+
 header {
   line-height: 1.5;
   max-height: 100vh;

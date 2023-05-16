@@ -12,8 +12,10 @@ import App from './App.vue'
 //导入路由，命名为router
 import router from './router'
 
+// 5. 创建并挂载根实例
 const app = createApp(App)
-
+//确保 _use_ 路由实例使
+//整个应用支持路由。
 app.use(router)
 //将App组件通过vuue渲染到id为app的标签中
 // 4. 调用 mount() 把 App 组件的模板结构，渲染到指定的 el 区域中
